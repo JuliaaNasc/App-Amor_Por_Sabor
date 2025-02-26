@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_social/pages/contribute.dart';
+import 'package:projeto_social/pages/place_order.dart';
 import 'package:projeto_social/pages/photos_gallery.dart';
 
 class AboutUs extends StatelessWidget {
@@ -18,11 +18,12 @@ class AboutUs extends StatelessWidget {
         toolbarHeight: 110,
         centerTitle: true,
         scrolledUnderElevation: 1,
-        backgroundColor: Colors.white,
+        backgroundColor: Color.fromARGB(255, 36, 7, 1),
         title: Image.asset(
-          'assets/logo.png',
-          width: 200,
+          'assets/logo_empresarial/logo_sem_fundo.png',
+          width: 100,
         ),
+        foregroundColor: Colors.white,
       );
     }
     return Scaffold(
@@ -58,19 +59,19 @@ class AboutUs extends StatelessWidget {
                   padding: const EdgeInsets.all(20),
                   child: Container(
                     decoration: const BoxDecoration(
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black,
-                          spreadRadius: 1,
-                          blurRadius: 5,
-                        ),
-                      ],
+                      // boxShadow: [
+                      //   BoxShadow(
+                      //     color: Colors.black,
+                      //     spreadRadius: 1,
+                      //     blurRadius: 5,
+                      //   ),
+                      // ],
                     ),
                     child: GestureDetector(
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(7),
                         child: Image.asset(
-                          'assets/gallery/dia_das_criancas/imagens/09.png',
+                          'assets/modelos/julia_sem_fundo_01.png',
                           width: 200,
                         ),
                       ),
@@ -78,7 +79,7 @@ class AboutUs extends StatelessWidget {
                         Navigator.of(context).push(
                           MaterialPageRoute(builder: (c) {
                             return PhotosGallery(
-                              imagem: 'assets/gallery/dia_das_criancas/imagens/09.png',
+                              imagem: 'assets/logo_empresarial/logo_sem_fundo.png',
                             );
                           }),
                         );
@@ -130,19 +131,19 @@ class AboutUs extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
                     child: Container(
                       decoration: const BoxDecoration(
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black,
-                            spreadRadius: 1,
-                            blurRadius: 5,
-                          ),
-                        ],
+                        // boxShadow: [
+                        //   BoxShadow(
+                        //     color: Colors.black,
+                        //     spreadRadius: 1,
+                        //     blurRadius: 5,
+                        //   ),
+                        // ],
                       ),
                       child: GestureDetector(
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(10),
                           child: Image.asset(
-                            'assets/gallery/doacao/imagens/08.jpg',
+                            'assets/modelos/julia_sem_fundo_02.png',
                             width: 200,
                           ),
                         ),
@@ -150,7 +151,7 @@ class AboutUs extends StatelessWidget {
                           Navigator.of(context).push(
                             MaterialPageRoute(builder: (c) {
                               return PhotosGallery(
-                                imagem: 'assets/gallery/doacao/imagens/08.jpg',
+                                imagem: 'assets/logo_empresarial/logo_sem_fundo.png',
                               );
                             }),
                           );
@@ -178,19 +179,19 @@ class AboutUs extends StatelessWidget {
                   padding: const EdgeInsets.fromLTRB(20, 20, 0, 0),
                   child: Container(
                     decoration: const BoxDecoration(
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black,
-                          spreadRadius: 1,
-                          blurRadius: 5,
-                        ),
-                      ],
+                      // boxShadow: [
+                      //   BoxShadow(
+                      //     color: Colors.black,
+                      //     spreadRadius: 1,
+                      //     blurRadius: 5,
+                      //   ),
+                      // ],
                     ),
                     child: GestureDetector(
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(7),
                         child: Image.asset(
-                          'assets/gallery/dia_das_criancas/imagens/11.jpeg',
+                          'assets/modelos/julia_sem_fundo_03.png',
                           width: 200,
                         ),
                       ),
@@ -198,7 +199,7 @@ class AboutUs extends StatelessWidget {
                         Navigator.of(context).push(
                           MaterialPageRoute(builder: (c) {
                             return PhotosGallery(
-                              imagem: 'assets/gallery/dia_das_criancas/imagens/11.jpeg',
+                              imagem: 'assets/logo_empresarial/logo_sem_fundo.png',
                             );
                           }),
                         );
@@ -247,12 +248,12 @@ class AboutUs extends StatelessWidget {
               ],
             ),
             const Text(
-              'Responsavel pelo institudo\nDoando Que Se Recebe',
+              'CEOs da Amor Por Sabor',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 25,
-                color: Colors.red,
+                color: Color.fromARGB(255, 36, 7, 1),
               ),
             ),
             const SizedBox(height: 30),
@@ -261,9 +262,9 @@ class AboutUs extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(20, 20, 0, 0),
                   child: ClipRRect(
-                    borderRadius: BorderRadius.circular(100),
+                    borderRadius: BorderRadius.circular(30),
                     child: Image.asset(
-                      'assets/gallery/dia_das_maes/imagens/foto_da_cris.jpeg',
+                      'assets/ceos/foto_perfil_julia.jpg',
                       width: 150,
                     ),
                   ),
@@ -272,7 +273,35 @@ class AboutUs extends StatelessWidget {
                   child: Padding(
                     padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
                     child: Text(
-                      'Cristiane Silva (Cris), fundadora e embaixadora do Institudo: Doando Que Se Recebe, com muito amor e carinho, levando as pessoas o significado de bondade. ',
+                      'Júlia Nascimento, fundadora e embaixadora do Institudo: Doando Que Se Recebe, com muito amor e carinho, levando as pessoas o significado de bondade. ',
+                      textAlign: TextAlign.justify,
+                      style: TextStyle(
+                        fontSize: 18,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+
+             Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 20, 0, 0),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(30),
+                    child: Image.asset(
+                      'assets/ceos/foto_perfil_arlysthon.jpg',
+                      width: 150,
+                    ),
+                  ),
+                ),
+                const Expanded(
+                  child: Padding(
+                    padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                    child: Text(
+                      'Arlysthon Feitosa, fundadora e embaixadora do Institudo: Doando Que Se Recebe, com muito amor e carinho, levando as pessoas o significado de bondade. ',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
                         fontSize: 18,
@@ -306,7 +335,7 @@ class AboutUs extends StatelessWidget {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (c) {
-                      return Contribute(
+                      return PlaceOrder(
                         hasAppBar: true,
                       );
                     },

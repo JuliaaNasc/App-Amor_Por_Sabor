@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_social/main_screen.dart';
+import 'package:projeto_social/drawer.dart';
 
 class Welcome extends StatelessWidget {
   const Welcome({super.key});
@@ -7,15 +7,12 @@ class Welcome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(255, 36, 7, 1),
       body: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           Image.asset(
-            'assets/logo.png',
+            'assets/logo_empresarial/logo_sem_fundo.png',
             width: 380,
-          ),
-          Image.asset(
-            'assets/wave_red.png',
           ),
           const SizedBox(height: 50),
           SizedBox(
@@ -29,13 +26,13 @@ class Welcome extends StatelessWidget {
               child: const Text(
                 'Entrar',
                 style: TextStyle(
-                  color: Colors.black,
+                  color: Color.fromARGB(255, 36, 7, 1),
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.red),
+                backgroundColor: MaterialStateProperty.all(Colors.white),
               ),
             ),
           ),

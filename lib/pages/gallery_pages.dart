@@ -23,7 +23,7 @@ class GalleryPages extends StatelessWidget {
         scrolledUnderElevation: 1,
         backgroundColor: Colors.white,
         title: Image.asset(
-          'assets/logo.png',
+          'assets/logo_empresarial/logo_marrom.jpg',
           width: 200,
         ),
       ),

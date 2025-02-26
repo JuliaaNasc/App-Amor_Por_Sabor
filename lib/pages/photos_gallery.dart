@@ -15,11 +15,12 @@ class PhotosGallery extends StatelessWidget {
         toolbarHeight: 110,
         centerTitle: true,
         scrolledUnderElevation: 1,
-        backgroundColor: Colors.white,
+        backgroundColor: Color.fromARGB(255, 36, 7, 1),
         title: Image.asset(
-          'assets/logo.png',
+          'assets/logo_empresarial/logo_sem_fundo.png',
           width: 200,
         ),
+        foregroundColor: Colors.white,
       ),
       body: Column(
         children: [

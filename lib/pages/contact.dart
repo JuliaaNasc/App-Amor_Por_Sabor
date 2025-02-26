@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:projeto_social/pages/contribute.dart';
+import 'package:projeto_social/pages/place_order.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Contact extends StatelessWidget {
@@ -19,11 +19,12 @@ class Contact extends StatelessWidget {
         toolbarHeight: 110,
         centerTitle: true,
         scrolledUnderElevation: 1,
-        backgroundColor: Colors.white,
+        backgroundColor: Color.fromARGB(255, 36, 7, 1),
         title: Image.asset(
-          'assets/logo.png',
-          width: 200,
+        'assets/logo_empresarial/logo_sem_fundo.png',
+          width: 100,
         ),
+        foregroundColor: Colors.white,
       );
     }
     return Scaffold(
@@ -40,7 +41,7 @@ class Contact extends StatelessWidget {
                     onTap: () {
                       launchUrl(
                         Uri.parse(
-                          'https://www.instagram.com/institutodoandoqueserecebe',
+                          'https://www.instagram.com/doces.amorporsabor/',
                         ),
                         mode: LaunchMode.externalApplication,
                       );
@@ -58,14 +59,14 @@ class Contact extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    subtitle: Text('@INSTITUTODOANDOQUESERECEBE'),
+                    subtitle: Text('@doces.amorporsabor'),
                   ),
                   SizedBox(height: 10),
                   ListTile(
                     onTap: () {
                       launchUrl(
                         Uri.parse(
-                          'https://api.whatsapp.com/send?phone=5585988970084 ',
+                          'https://api.whatsapp.com/send?phone=5585988105663 ',
                         ),
                         mode: LaunchMode.externalApplication,
                       );
@@ -83,32 +84,7 @@ class Contact extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    subtitle: Text('(85) 9 8897 0084'),
-                  ),
-                  SizedBox(height: 10),
-                  ListTile(
-                    onTap: () {
-                      launchUrl(
-                        Uri.parse(
-                          'https://instituto-doando-que-se-recebe.netlify.app/ ',
-                        ),
-                        mode: LaunchMode.externalApplication,
-                      );
-                    },
-                    leading: const Icon(
-                      Icons.web,
-                      size: 35,
-                    ),
-                    trailing: Icon(Icons.open_in_new),
-                    title: const Text(
-                      'SITE ',
-                      style: TextStyle(
-                        fontFamily: 'Montserrat',
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    subtitle: Text('https://instituto-doando-que-se-recebe.netlify.app/'),
+                    subtitle: Text('(85) 9 8810 5663'),
                   ),
                   SizedBox(height: 10),
                   ListTile(
@@ -133,58 +109,9 @@ class Contact extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    subtitle: Text('(85) 9 8897 0084'),
+                    subtitle: Text('(85) 9 8810 5663'),
                   ),
-                  SizedBox(height: 10),
-                  ListTile(
-                    onTap: () {
-                      launchUrl(
-                        Uri.parse(
-                          'mailto:institutodoandoqueserecebe@gmail.com',
-                        ),
-                        mode: LaunchMode.externalApplication,
-                      );
-                    },
-                    leading: const Icon(
-                      Icons.email,
-                      size: 35,
-                    ),
-                    trailing: Icon(Icons.open_in_new),
-                    title: const Text(
-                      'E-MAIL ',
-                      style: TextStyle(
-                        fontFamily: 'Montserrat',
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    subtitle: Text('INSTITUTODOANDOQUESERECEBE@GMAIL.COM'),
-                  ),
-                  ListTile(
-                    onTap: () {
-                      launchUrl(
-                        Uri.parse(
-                          'https://maps.google.com/?q=-3.7946149,-38.5858287',
-                        ),
-                        mode: LaunchMode.externalApplication,
-                      );
-                    },
-                    leading: const Icon(
-                      Icons.location_pin,
-                      size: 35,
-                    ),
-                    trailing: Icon(Icons.open_in_new),
-                    title: const Text(
-                      'LOCALIZAÇÃO ',
-                      style: TextStyle(
-                        fontFamily: 'Montserrat',
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    subtitle: Text('R. Einstein, 1322 - Vila Peri, Fortaleza - CE, 60730-145'),
-                  ),
-                  const SizedBox(height: 30),
+                  const SizedBox(height: 400),
                   OutlinedButton(
                     style: OutlinedButton.styleFrom(
                       side: const BorderSide(
@@ -196,15 +123,16 @@ class Contact extends StatelessWidget {
                       Navigator.of(context).push(
                         MaterialPageRoute(
                           builder: (c) {
-                            return Contribute(
+                            return PlaceOrder(
                               hasAppBar: true,
                             );
                           },
                         ),
                       );
                     },
+                    
                     child: const Text(
-                      'Contribua Conosco',
+                      'Faça o seu Pedido',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
@@ -214,13 +142,6 @@ class Contact extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 10),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Image.asset('assets/wave_red.png', fit: BoxFit.fitWidth),
-                      ),
-                    ],
-                  ),
                 ],
               ),
             ),

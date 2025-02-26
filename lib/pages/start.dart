@@ -1,8 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:projeto_social/pages/contact.dart';
-import 'package:projeto_social/pages/contribute.dart';
-import 'package:projeto_social/pages/gallery.dart';
+import 'package:projeto_social/pages/place_order.dart';
+import 'package:projeto_social/pages/menu.dart';
 
 import 'about_us.dart';
 
@@ -20,7 +20,7 @@ class Start extends StatelessWidget {
                 Stack(
                   children: [
                     Image.asset(
-                      'assets/criancas_instituto.png',
+                      'assets/carrossel/copo_felicidade.png',
                     ),
                     const Positioned.fill(
                       top: 90,
@@ -70,12 +70,12 @@ class Start extends StatelessWidget {
                 Stack(
                   children: [
                     Image.asset(
-                      'assets/criancas_instituto.png',
+                      'assets/carrossel/copo_felicidade.png',
                     ),
                     const Positioned.fill(
                       top: 90,
                       child: Text(
-                        'GALERIA',
+                        'CARDÁPIO',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -97,7 +97,7 @@ class Start extends StatelessWidget {
                           Navigator.of(context).push(
                             MaterialPageRoute(
                               builder: (c) {
-                                return Gallery(
+                                return Menu(
                                   hasAppBar: true,
                                 );
                               },
@@ -120,7 +120,7 @@ class Start extends StatelessWidget {
                 Stack(
                   children: [
                     Image.asset(
-                      'assets/criancas_instituto.png',
+                      'assets/carrossel/copo_felicidade.png',
                     ),
                     const Positioned.fill(
                       top: 90,
@@ -170,12 +170,12 @@ class Start extends StatelessWidget {
                 Stack(
                   children: [
                     Image.asset(
-                      'assets/criancas_instituto.png',
+                      'assets/carrossel/copo_felicidade.png',
                     ),
                     const Positioned.fill(
                       top: 90,
                       child: Text(
-                        'QUERO CONTRIBUIR',
+                        'FAZER PEDIDO',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -197,7 +197,7 @@ class Start extends StatelessWidget {
                           Navigator.of(context).push(
                             MaterialPageRoute(
                               builder: (c) {
-                                return Contribute(
+                                return PlaceOrder(
                                   hasAppBar: true,
                                 );
                               },
@@ -225,12 +225,12 @@ class Start extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             const Text(
-              'Sobre o Instituto\nDoando Que Se Recebe',
+              'Queremos adoçar a sua vida, usando apenas ingredientes doces.',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 25,
-                color: Colors.red,
+                fontSize: 20,
+                color: Color.fromARGB(255, 36, 7, 1),
               ),
             ),
             Padding(
@@ -245,16 +245,13 @@ class Start extends StatelessWidget {
                     ),
                   ],
                 ),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
-                  child: Image.asset(
-                   'assets/gallery/doacao/imagens/03.png',
-                  ),
+                child: Image.asset(
+                  'assets/modelos/julia_03.png',
                 ),
               ),
             ),
             const Text(
-              'Doações De Alimentos',
+              'Copo da Felicidade',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
@@ -265,7 +262,7 @@ class Start extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.fromLTRB(50, 10, 50, 20),
               child: Text(
-                'As doações são feitas de forma simbólica por cada pessoa que se fornece a doar. Os alimentos são entregues a famílias que estão necessitadas.',
+                ' . . .',
                 textAlign: TextAlign.justify,
                 style: TextStyle(
                   fontSize: 19,
@@ -285,16 +282,13 @@ class Start extends StatelessWidget {
                     ),
                   ],
                 ),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
-                  child: Image.asset(
-                    'assets/gallery/dia_das_criancas/imagens/10.png',
-                  ),
+                child: Image.asset(
+                  'assets/modelos/julia_02.png',
                 ),
               ),
             ),
             const Text(
-              'Dia das Crianças',
+              'Panetones',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
@@ -305,7 +299,7 @@ class Start extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.fromLTRB(50, 10, 50, 20),
               child: Text(
-                'O nosso dia das crianças é feito com muito amor e carinho para nossa comunidade, e com a ajuda da sua doação podemos presentear varias crianças necessitadas.',
+                ' . . .',
                 textAlign: TextAlign.justify,
                 style: TextStyle(
                   fontSize: 19,
@@ -325,16 +319,13 @@ class Start extends StatelessWidget {
                     ),
                   ],
                 ),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
-                  child: Image.asset(
-                     'assets/gallery/doacao/imagens/05.png',
-                  ),
+                child: Image.asset(
+                  'assets/modelos/julia_01.png',
                 ),
               ),
             ),
             const Text(
-              'Doações de roupas',
+              'Trufas',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
@@ -345,7 +336,7 @@ class Start extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.fromLTRB(50, 10, 50, 20),
               child: Text(
-                'As doações de roupas são recebidas com muito carinho e cuidado, para as nossas crianças e adultos que necessitam de doações.',
+                '. . .',
                 textAlign: TextAlign.justify,
                 style: TextStyle(
                   fontSize: 19,
@@ -365,16 +356,13 @@ class Start extends StatelessWidget {
                     ),
                   ],
                 ),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
-                  child: Image.asset(
-                  'assets/gallery/acao_de_pascoa/imagens/01.png',
-                  ),
+                child: Image.asset(
+                  'assets/modelos/julia_01.png',
                 ),
               ),
             ),
             const Text(
-              'Ação de Páscoa',
+              'Ovos de Páscoa',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
@@ -385,7 +373,7 @@ class Start extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.fromLTRB(50, 10, 50, 20),
               child: Text(
-                'A ação de páscoa é feita com o intuito das crianças terem o momento de ser criança. Para a criança mais doce do mundo, eu desejo uma Páscoa repleta de amor, chocolates e coelhinhos! colabore conosco para celebrarmos uma boa páscoa.',
+                '. . .',
                 textAlign: TextAlign.justify,
                 style: TextStyle(
                   fontSize: 19,
@@ -405,7 +393,7 @@ class Start extends StatelessWidget {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (c) {
-                      return Contribute(
+                      return PlaceOrder(
                         hasAppBar: true,
                       );
                     },
@@ -413,7 +401,7 @@ class Start extends StatelessWidget {
                 );
               },
               child: const Text(
-                'Contribua Conosco',
+                'Faça o seu Pedido',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
@@ -422,17 +410,7 @@ class Start extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 10),
-            Row(
-              children: [
-                Expanded(
-                  child: Image.asset(
-                    'assets/wave_red.png',
-                    fit: BoxFit.fitWidth,
-                  ),
-                ),
-              ],
-            ),
+            SizedBox(height: 30),
           ],
         ),
       ),
