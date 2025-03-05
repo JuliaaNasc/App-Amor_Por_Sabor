@@ -15,8 +15,10 @@ class Album extends StatelessWidget {
   List<String> videos;
   List<String> imagens;
 
+
   @override
   Widget build(BuildContext context) {
+    
     return GestureDetector(
       onTap: () {
         Navigator.of(context).push(

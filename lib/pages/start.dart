@@ -384,9 +384,10 @@ class Start extends StatelessWidget {
             const SizedBox(height: 30),
             OutlinedButton(
               style: OutlinedButton.styleFrom(
+                backgroundColor: Color.fromARGB(255, 36, 7, 1),
                 side: const BorderSide(
                   width: 2,
-                  color: Colors.black,
+                  color: Color.fromARGB(255, 36, 7, 1),
                 ),
               ),
               onPressed: () {
@@ -406,7 +407,7 @@ class Start extends StatelessWidget {
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
-                  color: Colors.black,
+                  color: Colors.white,
                 ),
               ),
             ),

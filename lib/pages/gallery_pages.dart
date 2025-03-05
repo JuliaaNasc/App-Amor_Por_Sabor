@@ -21,11 +21,12 @@ class GalleryPages extends StatelessWidget {
         toolbarHeight: 110,
         centerTitle: true,
         scrolledUnderElevation: 1,
-        backgroundColor: Colors.white,
+        backgroundColor: Color.fromARGB(255, 36, 7, 1),
         title: Image.asset(
-          'assets/logo_empresarial/logo_marrom.jpg',
-          width: 200,
+          'assets/logo_empresarial/logo_sem_fundo.png',
+          width: 100,
         ),
+        foregroundColor: Colors.white,
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -39,7 +40,7 @@ class GalleryPages extends StatelessWidget {
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 28,
-                      color: Colors.red,
+                      color: Color.fromARGB(255, 36, 7, 1),
                     ),
                   ),
                 ),

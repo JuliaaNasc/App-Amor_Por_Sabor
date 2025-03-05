@@ -20,7 +20,7 @@ class Menu extends StatelessWidget {
         scrolledUnderElevation: 1,
         backgroundColor: Color.fromARGB(255, 36, 7, 1),
         title: Image.asset(
-           'assets/logo_empresarial/logo_sem_fundo.png',
+          'assets/logo_empresarial/logo_sem_fundo.png',
           width: 100,
         ),
         foregroundColor: Colors.white,
@@ -41,31 +41,31 @@ class Menu extends StatelessWidget {
               childAspectRatio: 0.75,
               children: [
                 Album(
-                  image:  'assets/logo_empresarial/logo_sem_fundo.png',
+                  image: 'assets/menu/ovos_pascoa/ovos.jpeg',
                   text: 'Ovos de Páscoa',
                   imagens: const [],
                   videos: [],
                 ),
                 Album(
-                  image:  'assets/logo_empresarial/logo_sem_fundo.png',
+                  image: 'assets/menu/trufas/trufa_01.jpeg',
                   text: 'Trufas Gourmet',
                   imagens: const [],
                   videos: [],
                 ),
                 Album(
-                  image:  'assets/logo_empresarial/logo_sem_fundo.png',
+                  image: 'assets/menu/copo_felicidade/copos.jpeg',
                   text: 'Copos da Felicidade',
                   imagens: const [],
                   videos: [],
                 ),
                 Album(
-                  image:  'assets/logo_empresarial/logo_sem_fundo.png',
+                  image: 'assets/menu/panetones/panetones.jpeg',
                   text: 'Panetones',
                   imagens: const [],
                   videos: const [],
                 ),
                 Album(
-                  image:  'assets/logo_empresarial/logo_sem_fundo.png',
+                  image: 'assets/menu/biscoitos/biscoito_01.jpeg',
                   text: 'Biscoitos',
                   imagens: const [],
                   videos: [],
@@ -75,9 +75,10 @@ class Menu extends StatelessWidget {
             SizedBox(height: 30),
             OutlinedButton(
               style: OutlinedButton.styleFrom(
+                backgroundColor: Color.fromARGB(255, 36, 7, 1),
                 side: const BorderSide(
                   width: 2,
-                  color: Colors.black,
+                  color: Color.fromARGB(255, 36, 7, 1),
                 ),
               ),
               onPressed: () {
@@ -97,21 +98,11 @@ class Menu extends StatelessWidget {
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
-                  color: Colors.black,
+                  color: Colors.white,
                 ),
               ),
             ),
-            const SizedBox(height: 10),
-            Row(
-              children: [
-                Expanded(
-                  child: Image.asset(
-                    'assets/wave_red.png',
-                    fit: BoxFit.fitWidth,
-                  ),
-                ),
-              ],
-            ),
+            const SizedBox(height: 40),
           ],
         ),
       ),

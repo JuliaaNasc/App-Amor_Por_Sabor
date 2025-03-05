@@ -31,21 +31,21 @@ class AboutUs extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            const SizedBox(height: 20),
+            const SizedBox(height: 40),
             const Text(
-              'Sobre são o Instituto\nDoando Que Se Recebe?',
+              'Conheça um pouco mais da \nnossa doceria.',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 25,
-                color: Colors.red,
+                color: Color.fromARGB(255, 36, 7, 1),
               ),
             ),
             const SizedBox(height: 30),
             const Padding(
               padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
               child: Text(
-                'A instituição Doando Que Se Recebe, iniciou sua jornada em 08 de Março de 2008. Com a liderança da Cristiane Silva, mais conhecida como "Cris". Com o intuito de ajudar o próximo com esperança de um mundo melhor. Nossa missão é transformar ideias em ações, impactando positivamente vidas e comunidades. Vislumbramos um futuro onde a educação, inovação e colaboração se fundem para criar oportunidades sem fronteiras. Nosso trabalho é guiado pela integridade, inovação e responsabilidade.',
+                'Nossa história começou com uma pequena produção caseira e muita vontade de vencer. Com poucos recursos, mas um enorme amor pela confeitaria, iniciamos essa jornada levando doces para amigos, familiares e clientes fiéis. Aos poucos, a qualidade e o sabor conquistaram Fortaleza, transformando um sonho em uma doceria reconhecida e querida. Com receitas que atravessam gerações, nossa doceria surgiu para manter viva a tradição dos doces artesanais em Fortaleza. Inspirados pelos sabores da infância e pelas delícias feitas com ingredientes selecionados, fomos conquistando espaço e o coração dos nossos clientes.',
                 textAlign: TextAlign.justify,
                 style: TextStyle(
                   fontSize: 18,
@@ -59,19 +59,19 @@ class AboutUs extends StatelessWidget {
                   padding: const EdgeInsets.all(20),
                   child: Container(
                     decoration: const BoxDecoration(
-                      // boxShadow: [
-                      //   BoxShadow(
-                      //     color: Colors.black,
-                      //     spreadRadius: 1,
-                      //     blurRadius: 5,
-                      //   ),
-                      // ],
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black,
+                          spreadRadius: 1,
+                          blurRadius: 5,
+                        ),
+                      ],
                     ),
                     child: GestureDetector(
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(7),
                         child: Image.asset(
-                          'assets/modelos/julia_sem_fundo_01.png',
+                          'assets/modelos/julia_01.png',
                           width: 200,
                         ),
                       ),
@@ -91,7 +91,7 @@ class AboutUs extends StatelessWidget {
                   child: Padding(
                     padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
                     child: Text(
-                      'Toda essa demonstração de compaixão é feita com muito amor e carinho. E apesar das dificuldades continuam firme nessa missão.',
+                      'Nosso propósito é resgatar memórias afetivas por meio do sabor. Cada receita carrega um pouco de história, carinho e tradição, trazendo à tona lembranças especiais e criando novas recordações para nossos clientes.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
                         fontSize: 18,
@@ -105,7 +105,7 @@ class AboutUs extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
               child: Text(
-                'A missão desta instituição é inspiradora, buscando impactar positivamente a comunidade. A instituição valoriza profundamente a diversidade e a inclusão em todas as suas atividades.',
+                'Nossa missão é oferecer doces artesanais que preservam o sabor da tradição, utilizando ingredientes selecionados e técnicas que garantem qualidade e frescor. Queremos que cada cliente sinta o carinho e a dedicação em cada mordida.',
                 textAlign: TextAlign.justify,
                 style: TextStyle(
                   fontSize: 18,
@@ -114,12 +114,12 @@ class AboutUs extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(20, 20, 0, 0),
+              padding: const EdgeInsets.fromLTRB(20, 20, 0, 20),
               child: Row(
                 children: [
                   const Expanded(
                     child: Text(
-                      'A paixão e o compromisso dos membros da equipe desta instituição são visíveis em cada aspecto do trabalho realizado.',
+                      'Nossa paixão pela confeitaria vai além de simplesmente fazer doces: é uma arte, uma forma de expressão e um jeito de espalhar carinho. Cada bolo, brigadeiro e sobremesa é feito com dedicação, buscando sempre encantar e surpreender.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
                         fontSize: 18,
@@ -131,19 +131,19 @@ class AboutUs extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
                     child: Container(
                       decoration: const BoxDecoration(
-                        // boxShadow: [
-                        //   BoxShadow(
-                        //     color: Colors.black,
-                        //     spreadRadius: 1,
-                        //     blurRadius: 5,
-                        //   ),
-                        // ],
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black,
+                            spreadRadius: 1,
+                            blurRadius: 5,
+                          ),
+                        ],
                       ),
                       child: GestureDetector(
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(10),
                           child: Image.asset(
-                            'assets/modelos/julia_sem_fundo_02.png',
+                            'assets/modelos/julia_02.png',
                             width: 200,
                           ),
                         ),
@@ -165,7 +165,7 @@ class AboutUs extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
               child: Text(
-                'Este trabalho destaca-se pela sua sustentabilidade e pela capacidade de criar impactos positivos de longo prazo na comunidade. A instituição segue com seu excelente trabalho em prol do bem.',
+                'O que nos destaca é a qualidade dos nossos ingredientes e o cuidado artesanal em cada preparo. Cada doce é feito com carinho, trazendo um sabor autêntico e inesquecível que conquista nossos clientes desde a primeira mordida. Mais do que vender doces, oferecemos uma experiência única! Nosso atendimento é acolhedor, e cada detalhe é pensado para que nossos clientes se sintam especiais. Queremos que cada visita seja tão doce quanto nossos produtos!',
                 textAlign: TextAlign.justify,
                 style: TextStyle(
                   fontSize: 18,
@@ -179,19 +179,19 @@ class AboutUs extends StatelessWidget {
                   padding: const EdgeInsets.fromLTRB(20, 20, 0, 0),
                   child: Container(
                     decoration: const BoxDecoration(
-                      // boxShadow: [
-                      //   BoxShadow(
-                      //     color: Colors.black,
-                      //     spreadRadius: 1,
-                      //     blurRadius: 5,
-                      //   ),
-                      // ],
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black,
+                          spreadRadius: 1,
+                          blurRadius: 5,
+                        ),
+                      ],
                     ),
                     child: GestureDetector(
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(7),
                         child: Image.asset(
-                          'assets/modelos/julia_sem_fundo_03.png',
+                          'assets/modelos/julia_03.png',
                           width: 200,
                         ),
                       ),
@@ -211,7 +211,7 @@ class AboutUs extends StatelessWidget {
                   child: Padding(
                     padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
                     child: Text(
-                      'Nunca subestime o poder da generosidade para transformar vidas e trazer esperança àqueles que mais precisam.',
+                      'Nosso diferencial está no amor que colocamos em cada doce. Aqui, cada receita carrega um propósito: tornar os dias mais felizes, celebrar momentos especiais e criar doces que marcam a vida das pessoas.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
                         fontSize: 18,
@@ -225,7 +225,7 @@ class AboutUs extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.fromLTRB(20, 20, 20, 0),
               child: Text(
-                'Todos nós podemos ser heróis na vida de alguém. Ofereça sua ajuda e faça a diferença!. Sua disposição para ajudar é a chave para um mundo mais solidário e empático. Junte-se a nós!.',
+                'Venha se deliciar com nossos doces e sentir o carinho em cada pedaço. Cada receita é feita com amor, dedicação e os melhores ingredientes para proporcionar uma experiência única e inesquecível. Aqui, cada mordida é um convite para celebrar a vida e os momentos especiais. Esperamos por você para tornar seu dia mais doce e repleto de sabor!',
                 textAlign: TextAlign.justify,
                 style: TextStyle(
                   fontSize: 18,
@@ -233,20 +233,7 @@ class AboutUs extends StatelessWidget {
                 ),
               ),
             ),
-            Row(
-              children: [
-                Expanded(
-                  child: Image.asset(
-                    'assets/wave_esquerda.png',
-                  ),
-                ),
-                Expanded(
-                  child: Image.asset(
-                    'assets/wave_direita.png',
-                  ),
-                ),
-              ],
-            ),
+            const SizedBox(height: 50),
             const Text(
               'CEOs da Amor Por Sabor',
               textAlign: TextAlign.center,
@@ -260,7 +247,7 @@ class AboutUs extends StatelessWidget {
             Row(
               children: [
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 20, 0, 0),
+                  padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(30),
                     child: Image.asset(
@@ -273,7 +260,7 @@ class AboutUs extends StatelessWidget {
                   child: Padding(
                     padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
                     child: Text(
-                      'Júlia Nascimento, fundadora e embaixadora do Institudo: Doando Que Se Recebe, com muito amor e carinho, levando as pessoas o significado de bondade. ',
+                      'Olá, eu sou Júlia Nascimento, confeiteira por paixão e criadora das delícias que adoçam tantos momentos especiais. Minha jornada na confeitaria começou com um simples amor pelos doces e cresceu junto com o desejo de transformar sabores em experiências inesquecíveis.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
                         fontSize: 18,
@@ -281,27 +268,26 @@ class AboutUs extends StatelessWidget {
                       ),
                     ),
                   ),
-                ),
+                )
               ],
             ),
-
-             Row(
+            Row(
               children: [
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 20, 0, 0),
+                  padding: const EdgeInsets.fromLTRB(20, 30, 0, 0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(30),
                     child: Image.asset(
-                      'assets/ceos/foto_perfil_arlysthon.jpg',
+                      'assets/ceos/foto_perfil_arlysthon.jpeg',
                       width: 150,
                     ),
                   ),
                 ),
                 const Expanded(
                   child: Padding(
-                    padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                    padding: EdgeInsets.fromLTRB(20, 30, 20, 0),
                     child: Text(
-                      'Arlysthon Feitosa, fundadora e embaixadora do Institudo: Doando Que Se Recebe, com muito amor e carinho, levando as pessoas o significado de bondade. ',
+                      'Olá, eu sou Arlysthon Feitosa, confeiteiro por paixão! \nMinha jornada começou com pequenos testes na cozinha e se tornou um sonho realizado. Hoje, transformo criatividade e amor em doces que encantam e adoçam momentos especiais.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
                         fontSize: 18,
@@ -313,9 +299,9 @@ class AboutUs extends StatelessWidget {
               ],
             ),
             const Padding(
-              padding: EdgeInsets.fromLTRB(20, 10, 20, 0),
+              padding: EdgeInsets.fromLTRB(20, 30, 20, 0),
               child: Text(
-                'Liderança é sobre empatia, visão e inspiração. É mostrar o potencial dentro de cada pessoa e ajudá-las a realizá-lo.',
+                'Deixe-se levar pelo sabor e descubra o prazer de saborear um doce feito com carinho. Venha provar nossas delícias e transformar seu dia em uma experiência ainda mais doce! 😊🍰',
                 textAlign: TextAlign.justify,
                 style: TextStyle(
                   fontSize: 18,
@@ -326,9 +312,10 @@ class AboutUs extends StatelessWidget {
             const SizedBox(height: 60),
             OutlinedButton(
               style: OutlinedButton.styleFrom(
+                backgroundColor: Color.fromARGB(255, 36, 7, 1),
                 side: const BorderSide(
                   width: 2,
-                  color: Colors.black,
+                  color: Color.fromARGB(255, 36, 7, 1),
                 ),
               ),
               onPressed: () {
@@ -343,23 +330,16 @@ class AboutUs extends StatelessWidget {
                 );
               },
               child: const Text(
-                'Contribua Conosco',
+                'Faça o seu Pedido',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
-                  color: Colors.black,
+                  color: Colors.white,
                 ),
               ),
             ),
-            const SizedBox(height: 10),
-            Row(
-              children: [
-                Expanded(
-                  child: Image.asset('assets/wave_red.png', fit: BoxFit.fitWidth),
-                ),
-              ],
-            ),
+            const SizedBox(height: 40),
           ],
         ),
       ),

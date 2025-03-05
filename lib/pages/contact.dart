@@ -21,7 +21,7 @@ class Contact extends StatelessWidget {
         scrolledUnderElevation: 1,
         backgroundColor: Color.fromARGB(255, 36, 7, 1),
         title: Image.asset(
-        'assets/logo_empresarial/logo_sem_fundo.png',
+          'assets/logo_empresarial/logo_sem_fundo.png',
           width: 100,
         ),
         foregroundColor: Colors.white,
@@ -114,9 +114,10 @@ class Contact extends StatelessWidget {
                   const SizedBox(height: 400),
                   OutlinedButton(
                     style: OutlinedButton.styleFrom(
+                      backgroundColor: Color.fromARGB(255, 36, 7, 1),
                       side: const BorderSide(
                         width: 2,
-                        color: Colors.black,
+                        color: Color.fromARGB(255, 36, 7, 1),
                       ),
                     ),
                     onPressed: () {
@@ -130,14 +131,13 @@ class Contact extends StatelessWidget {
                         ),
                       );
                     },
-                    
                     child: const Text(
                       'Faça o seu Pedido',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 20,
-                        color: Colors.black,
+                        color: Colors.white,
                       ),
                     ),
                   ),

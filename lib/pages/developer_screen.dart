@@ -42,7 +42,7 @@ class DeveloperScreen extends StatelessWidget {
                     backgroundColor: Colors.black,
                     radius: 76,
                     child: CircleAvatar(
-                        backgroundColor: Colors.red,
+                        backgroundColor: Color.fromARGB(255, 36, 7, 1),
                         radius: 72,
                         foregroundImage: developer.photo != null
                             ? Image.asset(

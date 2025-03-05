@@ -47,7 +47,7 @@ class PlaceOrder extends StatelessWidget {
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 25,
-                        color: Colors.red,
+                        color: Color.fromARGB(255, 36, 7, 1),
                       ),
                     ),
                     const SizedBox(height: 20),
@@ -149,7 +149,7 @@ class PlaceOrder extends StatelessWidget {
                                                                         icon: const Icon(
                                                                           Icons.close,
                                                                           size: 30,
-                                                                          color: Colors.red,
+                                                                          color: Color.fromARGB(255, 36, 7, 1),
                                                                         ),
                                                                       ),
                                                                     ],
@@ -198,7 +198,7 @@ class PlaceOrder extends StatelessWidget {
                                                                       icon: const Icon(
                                                                         Icons.close,
                                                                         size: 30,
-                                                                        color: Colors.red,
+                                                                        color: Color.fromARGB(255, 36, 7, 1),
                                                                       ),
                                                                     ),
                                                                   ],
