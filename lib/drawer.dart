@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_social/pages/about_us.dart';
-import 'package:projeto_social/pages/contact.dart';
+import 'package:projeto_social/pages/sobre_nos/about_us.dart';
+import 'package:projeto_social/pages/contato/contact.dart';
 import 'package:projeto_social/pages/place_order.dart';
 import 'package:projeto_social/pages/developers.dart';
-import 'package:projeto_social/pages/menu.dart';
-import 'package:projeto_social/pages/start.dart';
+import 'package:projeto_social/pages/cardapio/menu.dart';
+import 'package:projeto_social/pages/inicio/start.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:projeto_social/models/developer_model.dart';
-import 'package:projeto_social/pages/photos_gallery.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class DeveloperScreen extends StatelessWidget {
@@ -31,13 +30,7 @@ class DeveloperScreen extends StatelessWidget {
               children: [
                 const SizedBox(height: 20),
                 GestureDetector(
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(builder: (c) {
-                        return PhotosGallery(imagem: developer.photo!);
-                      }),
-                    );
-                  },
+
                   child: CircleAvatar(
                     backgroundColor: Colors.black,
                     radius: 76,

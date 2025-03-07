@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_social/pages/place_order.dart';
-import 'package:projeto_social/pages/photos_gallery.dart';
 
 class AboutUs extends StatelessWidget {
   AboutUs({
@@ -75,15 +74,7 @@ class AboutUs extends StatelessWidget {
                           width: 200,
                         ),
                       ),
-                      onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(builder: (c) {
-                            return PhotosGallery(
-                              imagem: 'assets/logo_empresarial/logo_sem_fundo.png',
-                            );
-                          }),
-                        );
-                      },
+                     
                     ),
                   ),
                 ),
@@ -147,15 +138,7 @@ class AboutUs extends StatelessWidget {
                             width: 200,
                           ),
                         ),
-                        onTap: () {
-                          Navigator.of(context).push(
-                            MaterialPageRoute(builder: (c) {
-                              return PhotosGallery(
-                                imagem: 'assets/logo_empresarial/logo_sem_fundo.png',
-                              );
-                            }),
-                          );
-                        },
+                       
                       ),
                     ),
                   ),
@@ -195,15 +178,7 @@ class AboutUs extends StatelessWidget {
                           width: 200,
                         ),
                       ),
-                      onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(builder: (c) {
-                            return PhotosGallery(
-                              imagem: 'assets/logo_empresarial/logo_sem_fundo.png',
-                            );
-                          }),
-                        );
-                      },
+                      
                     ),
                   ),
                 ),
